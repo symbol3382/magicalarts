@@ -15,9 +15,7 @@ $(document).ready(function () {
 })
 
 function typewrite(word) {
-    console.log('dddddd workd', word.length);
     if (word && word.length) {
-        console.log('dddddd writting', word[0]);
         dom.text(dom.text() + word[0]);
         setTimeout(() => {
                 typewrite(word.slice(1));
