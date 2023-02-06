@@ -27,7 +27,7 @@ body, html {
 
 .word {
     font-weight: bold;
-    font-size: 15rem;
+    font-size: 15vw;
     opacity: 0.6;
 }
 
@@ -48,6 +48,26 @@ body, html {
 }
 
 .bgImg img{
-    height: 100vh;
     opacity: 0.4;
+    max-width: 100%;
+}
+
+.messageBox {
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-shadow: 2px 2px 5px #111;
+}
+
+@media screen and (max-width: 800px) {
+    .word {
+        font-size: 25vw;
+    }
+    .lower {
+        top: 20%;
+    }
+    .messageBox {
+        align-items: center !important;
+        font-size: 300%;
+    }
 }
